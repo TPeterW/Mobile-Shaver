@@ -1,0 +1,4 @@
+MainPackage=C:\Users\韬\Documents\Visual Studio 2013\Projects\Mobile Shaver\Mobile Shaver\bin\Release\Mobile Shaver_2015.727.0.0_Bundle\Mobile Shaver_2015.727.0.0_AnyCPU.appx
+SymbolPackage=C:\Users\韬\Documents\Visual Studio 2013\Projects\Mobile Shaver\Mobile Shaver\AppPackages\Mobile Shaver_2015.727.0.0_Test\Mobile Shaver_2015.727.0.0_AnyCPU.appxsym
+ResourcePack=C:\Users\韬\Documents\Visual Studio 2013\Projects\Mobile Shaver\Mobile Shaver\bin\Release\Mobile Shaver_2015.727.0.0_Bundle\Mobile Shaver_2015.727.0.0_scale-100.appx
+ResourcePack=C:\Users\韬\Documents\Visual Studio 2013\Projects\Mobile Shaver\Mobile Shaver\bin\Release\Mobile Shaver_2015.727.0.0_Bundle\Mobile Shaver_2015.727.0.0_scale-140.appx

@@ -1,0 +1,103 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Mobile_Shaver"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.Mobile.UI"
+    x:Class="Mobile_Shaver.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Resources>
+        <Storyboard x:Name="ShowImage">
+            <DoubleAnimation Storyboard.TargetName="background"
+                             Storyboard.TargetProperty="Opacity"
+                             From="0"
+                             To="1"
+                             Duration="0:0:1"/>
+
+            <DoubleAnimation Storyboard.TargetName="button_flip"
+                             Storyboard.TargetProperty="Opacity"
+                             From="0"
+                             To="1"
+                             Duration="0:0:1"/>
+
+            <DoubleAnimation Storyboard.TargetName="visibility"
+                             Storyboard.TargetProperty="Opacity"
+                             From="0.2"
+                             To="1"
+                             Duration="0:0:1"/>
+        </Storyboard>
+
+        <Storyboard x:Name="HideImage">
+            <DoubleAnimation Storyboard.TargetName="background" 
+                             Storyboard.TargetProperty="Opacity"
+                             From="1"
+                             To="0"
+                             Duration="0:0:1"/>
+            
+            <DoubleAnimation Storyboard.TargetName="button_flip"
+                             Storyboard.TargetProperty="Opacity"
+                             From="1"
+                             To="0"
+                             Duration="0:0:1"/>
+
+            <DoubleAnimation Storyboard.TargetName="visibility"
+                             Storyboard.TargetProperty="Opacity"
+                             From="1"
+                             To="0.2"
+                             Duration="0:0:1"/>
+        </Storyboard>
+    </Page.Resources>
+    
+    <Grid x:Name="mainGrid"
+        IsTapEnabled="True" 
+        IsDoubleTapEnabled="True"
+        Opacity="100">
+
+        <MediaElement x:Name="player"
+                Source="/assets/shaver1.mp3"
+                AutoPlay="False"
+                MediaEnded="player_MediaEnded"/>
+
+        <Image x:Name="background"
+               VerticalAlignment="Stretch"
+               HorizontalAlignment="Stretch"
+               Source="/assets/Background.png"
+               Opacity="1"/>
+        
+        <AppBarButton x:Name="button_flip"
+                      HorizontalAlignment="Left" 
+                      Height="82" 
+                      Icon="Sort" 
+                      Label="Flip"
+                      Margin="5,20,0,0" 
+                      VerticalAlignment="Center" 
+                      Width="81"
+                      Click="Flip_Click"
+                      Opacity="1"/>
+
+        <!--Margin="0,0,0,90"-->
+        <!--Margin for inverted mode-->
+        
+        <Rectangle x:Name="hot_zone" 
+                   Height="200" 
+                   Margin="0,80,0,0"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Width="78"
+                   IsTapEnabled="True"
+                   Tapped="button_Tapped"
+                   Opacity="0"
+                   Fill="White"/>
+        
+        <ToggleSwitch x:Name="visibility"
+                      Header="Visible"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Bottom"
+                      IsOn="True"
+                      Toggled="visibility_Toggled"
+                      Margin="20, 0, 20, 0"/>
+    </Grid>
+</Page>
