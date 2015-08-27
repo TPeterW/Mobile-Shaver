@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StoreAssociation xmlns="http://schemas.microsoft.com/appx/2010/storeassociation">
   <Publisher>CN=9C4B1274-6AA0-4C92-BFB4-E83295097D21</Publisher>
-  <PublisherDisplayName>TPWang</PublisherDisplayName>
+  <PublisherDisplayName>TPW Studio</PublisherDisplayName>
   <GeneratePackageHash>http://www.w3.org/2001/04/xmlenc#sha256</GeneratePackageHash>
   <SupportedLocales>
     <Language Code="af" InMinimumRequirementSet="true" />
@@ -189,22 +189,26 @@
       <ReservedName>Mobile Shaver</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
-  <AccountPackageIdentityNames />
+  <AccountPackageIdentityNames>
+    <MainPackageIdentityName>35186TPWang.NightViewCalculator</MainPackageIdentityName>
+    <MainPackageIdentityName>35186TPWang.ProgrammerCalc</MainPackageIdentityName>
+    <MainPackageIdentityName>35186TPWang.UltraReminder</MainPackageIdentityName>
+  </AccountPackageIdentityNames>
   <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH2JVGT">
     <PackageInfo>
       <OsMinVersion>6.3.1.0</OsMinVersion>
       <PackageArchitecture>Neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>2015.625.1444.3816</PackageMaxArchitectureVersion>
+      <PackageMaxArchitectureVersion>2015.727.422.1874</PackageMaxArchitectureVersion>
     </PackageInfo>
     <PackageInfo>
       <OsMinVersion>6.3.1.0</OsMinVersion>
       <PackageArchitecture>Neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>2015.625.1444.3816</PackageMaxArchitectureVersion>
+      <PackageMaxArchitectureVersion>2015.727.422.1874</PackageMaxArchitectureVersion>
     </PackageInfo>
     <PackageInfo>
       <OsMinVersion>6.3.1.0</OsMinVersion>
       <PackageArchitecture>Neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>2015.625.1444.3816</PackageMaxArchitectureVersion>
+      <PackageMaxArchitectureVersion>2015.727.422.1874</PackageMaxArchitectureVersion>
     </PackageInfo>
   </PackageInfoList>
 </StoreAssociation>
